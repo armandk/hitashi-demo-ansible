@@ -367,7 +367,7 @@
 
   "Outputs" : {
     "WebsiteURL" : {
-      "Value" : { "Fn::Join" : ["", ["http://", { "Fn::GetAtt" : [ "WebServer", "PublicIp"] }, "/hitashidemo"]] },
+      "Value" : { "Fn::Join" : ["", ["http://", { "Fn::GetAtt" : [ "WebServer", "PublicIp"] }, "/wordpress/wp-admin/install.php"]] },
       "Description" : "Application  Website"
     },
     "WebServerIp": {
