@@ -1,6 +1,7 @@
 This repository helps lunch a wordpress application via an AWS Cloudformation template in two 
 ways.  Either running an Ansible Script or loading the template inside to create stack.
-This a stack that creates a VPC with one public subnet and two private subnets. The Public subnet has a WebServer that allows traffic to HTTP 80 only. The Private subnets have a RDSMySQL Database. There are two Security Groups: One for the WebServer and the other for the Database. One internet Gateway. One Route Table and one for internet Gateway attached to the Public Subnet
+
+The stack creates a VPC with one public subnet and two private subnets. The Public subnet has a WebServer that allows traffic to HTTP 80 only. The Private subnets have a RDSMySQL Database. There are two Security Groups: One for the WebServer and the other for the Database. One internet Gateway. One Route Table and one for internet Gateway attached to the Public Subnet
 
 1.	Via an Ansible Playbook run, in that case the stack will be created automatically with the default values. 
 To do that, assuming that you have ansible installed in your playground machine with python, boto3 and git installed. You have to edit /etc/ansible/hosts file to add the localhost
